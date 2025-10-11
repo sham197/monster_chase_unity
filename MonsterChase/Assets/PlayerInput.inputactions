@@ -14,12 +14,21 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "fe30b264-5182-4156-9eda-b2eef549e2cf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "WASD",
-                    "id": "75e915c3-0d27-47a2-bcba-80dbbd053805",
+                    "name": "AD",
+                    "id": "a7a2af8c-25e4-4cf3-9cb5-0cb5184c9d4d",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -29,30 +38,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "6a98a192-e071-4030-879e-e4431aedc5a2",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "9cd027ed-f8ed-4dda-b2d9-2f2d676fb6b4",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "left",
-                    "id": "b3f06de3-0bba-46ea-a695-d629c5ba3223",
+                    "id": "8e128c85-c6ea-43e4-b96d-f55b123eeb2e",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -63,7 +50,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "a416e402-7426-4c3d-90df-1aa40e4357a6",
+                    "id": "dd914536-ece2-4cd4-b455-183a3a7d39d3",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -71,6 +58,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "e9503eea-21f1-490f-842f-ea7d65cf0eae",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

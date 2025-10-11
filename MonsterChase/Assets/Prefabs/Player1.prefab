@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6874901933924244720}
   - component: {fileID: 6999869054807023243}
   - component: {fileID: 4117178160720638786}
+  - component: {fileID: 1145008859039232413}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -189,7 +190,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6999869054807023243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,11 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveForce: 10
-  jumpForce: 10
-  _playerInput: {fileID: 0}
-  _rigidbody2D: {fileID: 6874901933924244720}
-  _spriteRenderer: {fileID: 8889620353338029018}
-  _anim: {fileID: 8654664287250428023}
+  jumpForce: 5
 --- !u!114 &4117178160720638786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: c2dd509a087f6dd44bd33aa989578065, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -234,11 +231,41 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1145008859039232413}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 03279a70-b1a7-457e-8585-1aa4859f6531
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fe30b264-5182-4156-9eda-b2eef549e2cf
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1145008859039232413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6944621428899498125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a721a4b7dfa05d84e8dd99a4a00248fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  moveForce: 10
+  jumpForce: 10
