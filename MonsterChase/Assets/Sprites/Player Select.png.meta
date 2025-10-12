@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Select_0
+      name: player_1_select
       rect:
         serializedVersion: 2
         x: 12
@@ -124,7 +124,7 @@ TextureImporter:
         width: 343
         height: 343
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Select_1
+      name: player_2_select
       rect:
         serializedVersion: 2
         x: 368
@@ -146,7 +146,7 @@ TextureImporter:
         width: 343
         height: 343
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dbafbdc2f9478ba44badc2f89477c6be
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Player Select_0: -3079569258902918314
-      Player Select_1: 8453041443550048800
+      player_1_select: -3079569258902918314
+      player_2_select: 8453041443550048800
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

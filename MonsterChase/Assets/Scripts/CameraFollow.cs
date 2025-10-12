@@ -14,6 +14,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     void LateUpdate()
     {
+        if (!_player)
+            return;
+        
         _tempPos = transform.position;
         _tempPos.x = _player.position.x;
         

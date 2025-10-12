@@ -24,7 +24,7 @@ public class MonsterSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(1, 5));
+            yield return new WaitForSeconds(Random.Range(2, 5));
             
             randomIndex = Random.Range(0, monsterPrefab.Length);
             randomSide = Random.Range(0, 2);
@@ -34,12 +34,12 @@ public class MonsterSpawner : MonoBehaviour
             if (randomSide == 0)
             {
                 _spawnedMonster.transform.position = leftPos.position;
-                _spawnedMonster.GetComponent<Monster>().speed = Random.Range(5f, 10f);
+                _spawnedMonster.GetComponent<Monster>().speed = Random.Range(4.5f, 7f);
             }
             else
             {
                 _spawnedMonster.transform.position = rightPos.position;
-                _spawnedMonster.GetComponent<Monster>().speed = -Random.Range(5f, 10f);
+                _spawnedMonster.GetComponent<Monster>().speed = -Random.Range(4.5f, 7f);
                 _spawnedMonster.GetComponent<SpriteRenderer>().flipX = true;
             }
         }

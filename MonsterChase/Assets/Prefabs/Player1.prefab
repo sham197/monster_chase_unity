@@ -244,4 +244,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveForce: 10
-  jumpForce: 12
+  jumpForce: 14

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2017078714880006462}
   - component: {fileID: 5694891441781098788}
   - component: {fileID: 1656351037149530625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy2
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1534993455
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 5023289697677887148, guid: 96400550c0ba6d74bbbb9996f7ed0d38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -150,8 +150,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.20124435, y: 0}
-  m_Size: {x: 0.88751125, y: 2.11}
+  m_Offset: {x: -0.20124435, y: 0.02340722}
+  m_Size: {x: 0.88751125, y: 2.0631852}
   m_Direction: 0
 --- !u!50 &5694891441781098788
 Rigidbody2D:
@@ -168,7 +168,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 40
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -178,7 +178,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1656351037149530625
 MonoBehaviour:

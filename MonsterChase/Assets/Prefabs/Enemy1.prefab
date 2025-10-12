@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5447286765791710970}
   - component: {fileID: 3536384456115277710}
   - component: {fileID: 4461654995863437832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy1
   m_TagString: Monster
   m_Icon: {fileID: 0}
@@ -150,8 +150,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.18115377, y: 0}
-  m_Size: {x: 0.8536444, y: 2.11}
+  m_Offset: {x: -0.18115377, y: 0.015363455}
+  m_Size: {x: 0.8536444, y: 2.0792727}
   m_Direction: 0
 --- !u!50 &3536384456115277710
 Rigidbody2D:
@@ -168,7 +168,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 40
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -178,7 +178,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &4461654995863437832
 MonoBehaviour:
