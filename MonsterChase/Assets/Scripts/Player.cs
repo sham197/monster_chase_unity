@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     
     string _groundTag = "Ground";
     
+    string ENEMY_TAG = "Monster";
+    
     string _walkAnimation = "Walk";
     
     
@@ -107,6 +109,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag(_groundTag))
         {
             _isGrounded = true;
+        }
+        
+        if (collision.gameObject.CompareTag(ENEMY_TAG))
+        {
+            Destroy(gameObject);
         }
     }
 }

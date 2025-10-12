@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Monster
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1046239527
+    locked: 0
+  - name: Monster
+    uniqueID: 2759973841
     locked: 0
   - name: Player
     uniqueID: 2070392723
