@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     
     int _charIndex;
     
+    private string _gameScene = "Gameplay";
     public int CharIndex
     {
         get { return _charIndex; }
@@ -20,18 +21,30 @@ public class GameManager : MonoBehaviour
        if (instance == null)
        { 
            instance = this;
+           DontDestroyOnLoad(gameObject);
+       }
+       else
+       {
+           Destroy(gameObject);
        }
 
     }
 
-    void Start()
+    void OnEnable()
     {
-        
+        SceneManager.sceneLoaded += onLevelFinishedLoading;
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    void OnDisable()
     {
-        
+        SceneManager.sceneLoaded -= onLevelFinishedLoading;
+    }
+    
+    void onLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == _gameScene)
+        {
+            Instantiate(characters[_charIndex]);
+        }
     }
 }
